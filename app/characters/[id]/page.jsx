@@ -1,3 +1,5 @@
+import Character from "../../../components/Character";
+
 async function getCharacter(id) {
   const response = await fetch(`https://rickandmortyapi.com/api/character/${id}`);
   return response.json();
@@ -10,11 +12,10 @@ export default async function CharacterDetail(props) {
 
   return (
     <main>
-      <h1>{character.name}</h1>
-      <p>{character.species}</p>
-      <img
-        src={character.image}
-        alt={character.name}
+        <Character
+        name={character.name}
+        species={character.species}
+        image={character.image}
       />
     </main>
   );
