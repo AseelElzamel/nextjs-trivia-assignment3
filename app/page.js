@@ -4,7 +4,7 @@ export default function Home() {
   return (
      <main className="p-10 text-center">
       <h1 className="text-3xl font-bold mb-4">
-        Welcome to the Page! Checkout this picture!
+        Welcome to Trivia Website (Netlify Test)
       </h1>
 
       <img
